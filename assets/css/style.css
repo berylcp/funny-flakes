@@ -30,6 +30,7 @@
   padding: 14px 28px;
   font-size: 1.1em;
   cursor: pointer;
+  border: none;
 }
 
 .text-uppercase {
@@ -235,7 +236,7 @@ nav .nav-menu {
 
   .yoghurt-list {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
 
   .yoghurt p {
@@ -253,28 +254,41 @@ nav .nav-menu {
   }
 
   .hero {
-    margin-top: 50px;
+    position: relative;
+    z-index: 1;
   }
 
   .hero .heading {
     font-size: 3em;
-    margin-top: 10px;
+    transform: translate(0, 70%) !important;
+  }
+
+  .hero .heading,
+  .hero .sub-heading {
+    transform: translate(0, 100%);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   }
 
   .hero img {
-    width: 80%;
-    margin-top: 90px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    opacity: 0.6;
+    z-index: -1;
   }
   /* Header Close */
 
   /* Menu */
   .menu img {
-    width: 100%;
-    transform: translateY(-60%);
+    display: none;
   }
 
   .menu .panel {
-    margin: 300px 15px;
+    margin: 50px 15px;
     text-align: center;
     padding: 15px;
     background-color: #fff;
