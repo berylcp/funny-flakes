@@ -260,12 +260,12 @@ nav .nav-menu {
 
   .hero .heading {
     font-size: 3em;
-    transform: translate(0, 50%) !important;
+    transform: translate(0, 70%) !important;
   }
 
   .hero .heading,
   .hero .sub-heading {
-    transform: translate(0, 150%);
+    transform: translate(0, 100%);
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   }
 
