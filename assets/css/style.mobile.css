@@ -1,5 +1,8 @@
 @media screen and (max-width: 576px) {
   /* Header */
+  .hero {
+    padding-top: 9rem;
+  }
   .hero h1 {
     font-size: 3em;
   }
