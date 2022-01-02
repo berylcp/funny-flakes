@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+  /* Header */
+  .hero h1 {
+    font-size: 4.5em;
+  }
+
+  .hero h2 {
+    font-size: 3.5em;
+  }
+
+  .hero img {
+    width: 500px;
+    height: 500px;
+  }
+  /* Header Close */
+}

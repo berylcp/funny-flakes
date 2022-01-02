@@ -1,0 +1,22 @@
+@media screen and (max-width: 576px) {
+  /* Header */
+  .hero h1 {
+    font-size: 3em;
+  }
+
+  .hero img {
+    width: 300px;
+    height: 300px;
+  }
+  /* Header Close */
+
+  /* Menu */
+  .menu {
+    margin-top: 0;
+  }
+
+  .menu img {
+    display: none;
+  }
+  /* Menu Close */
+}
