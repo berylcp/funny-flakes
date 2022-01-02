@@ -18,5 +18,9 @@
   .menu img {
     display: none;
   }
+
+  .menu .card.outer-card {
+    border: none;
+  }
   /* Menu Close */
 }
