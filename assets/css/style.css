@@ -160,27 +160,20 @@ nav .nav-menu {
   margin-bottom: 50px;
 }
 
-.panel-menu .cereal li,
-.panel-menu .milk li {
-  list-style: none;
-}
-
-.panel-menu .cereal li::first-letter,
-.panel-menu .milk li::first-letter {
-  text-transform: capitalize;
-}
-
-.panel-menu .cereal li input,
-.panel-menu .milk li input {
-  margin-left: 20px;
-}
-
 .panel-menu p {
   font-weight: 700;
 }
 
 .panel-menu .price {
   margin-left: 50px;
+}
+
+.panel-menu table {
+  border-collapse: collapse;
+}
+
+.panel-menu table td {
+  padding: 10px 25px 10px 0;
 }
 
 .yoghurt {
@@ -200,15 +193,18 @@ nav .nav-menu {
   justify-content: space-between;
 }
 
+.yoghurt-list table {
+  border-collapse: collapse;
+}
+
+.yoghurt-list table td {
+  padding: 0 25px 0 0;
+}
+
 .yoghurt-list p {
   text-transform: uppercase;
   font-weight: 700;
 }
-
-.yoghurt-list .price {
-  margin-left: 30px;
-}
-
 /* Menu Close */
 
 /* Responsive */
