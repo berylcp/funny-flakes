@@ -1,58 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Page Title -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media_screen.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="shortcut icon" href="ico/favicon.ico">
     <title>Funny Flakes</title>
-
-    <!-- Custom Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-
-  <body class="home" id="home">
-    <!-- Header -->
-    <div class="o-header u-bg__color--primary">
-      <nav class="o-navbar">
-        <a class="c-navbar__brand" href="#">
-          <img src="assets/img/logo-funny.png" alt="Funny Logo" />
-        </a>
-
-        <ul class="[ o-navbar__links ] u-text__transform--uppercase u-font__weight--500">
-          <li><a href="#">menu</a></li>
-          <li><a href="#">combo</a></li>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-
-        <a class="c-navbar__button" href="#">
-          <img src="assets/img/icon-cart.png" alt="Cart Icon" />
-        </a>
-      </nav>
-
-      <div class="o-hero">
-        <h1 class="[ c-hero__title ] u-text__transform--capitalize u-font__weight--500">
-          we are <br />
-          funny flakes
-        </h1>
-        <h2 class="c-hero__subtitle u-font__weight--500">and we love breakfast</h2>
-
-        <img class="c-hero__image" src="assets/img/cereal.png" alt="Hero Image" />
-      </div>
+</head>
+<body>
+    <header>
+        <div class="header_wrapper">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo"/>
+                </a>
+            </h1>
+            <nav>
+                <ul class="main_menu">
+                    <li><a>MENU</a></li>
+                    <li><a>COMBOS</a></li>
+                    <li><a>ABOUT US</a></li>
+                    <li><a>CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <div class="cart_icon"></div>
+                <ul class="cart_menu">
+                    <li><a href="#">Likes</a></li>
+                    <li><a href="#">order(1)</a></li>
+                    <li><a href="#">coupon</a></li>
+                </ul>
+            </div>
+            <div class="main_visual">
+                <div class="main_visual_text">
+                    <p class="main_title">We are<br/>Funny Flakes</p>
+                    <p class="main_subtitle">and we love breakfast</p>
+                </div>
+            </div>
+            <div class="mobile_menu_icon"></div>
+            <div class="mobile_menu_wrapper">
+                <div class="mobile_menu_wrapper2">
+                    <ul class="mobile_menu">
+                        <li><a>MENU</a></li>
+                        <li><a>COMBOS</a></li>
+                        <li><a>ABOUT US</a></li>
+                        <li><a>CONTACT</a></li>
+                    </ul>
+                    <div class="moblie_menu_close"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <section class="group1">
+            <h2 class="hidden">Menu section</h2>
+            <div class="svg_wrapper">
+                <svg version="1.1" class="svg_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+                <g>
+                <path class="path_left" d="M220.262,366.814c41.228-14.367,64.978-58.826,96.198-136.802
+                    c43.518-108.692,53.929-137.426,67.672-149.92s154.708-58.065,177.821-65.59C576.392,9.802,591.841,5.391,596.66-2H-2v334.452
+                    c16.689,8.319,35.468,14.508,56.726,18.745C98.453,359.914,179.034,381.181,220.262,366.814z"/>
+                </g>
+                </svg>
+                <svg version="1.1" class="svg_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+                <g>
+                <path class="path_right" d="M361.076,143.985c9.307,26.708,38.108,42.094,88.622,62.319
+                    c70.412,28.192,89.027,34.936,97.12,43.839c8.093,8.903,37.615,100.223,42.49,115.196c3.045,9.354,5.902,19.361,10.691,22.483V0
+                    H383.337c-5.389,10.811-9.398,22.976-12.143,36.748C365.547,65.075,351.769,117.277,361.076,143.985z"/>
+                </g>
+                </svg>
+                <svg class="svg_bottom" width="1200" height="1000" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path class="path_bottom" transform="rotate(-1.9274753332138062 602.0466918945353,487.13967895507795) " id="svg_5" d="m231.80276,214.35843c22.57527,-118.75544 166.23607,-270.01238 383.77957,-145.00664c217.5435,125.00572 226.36553,195.17024 405.32869,240.01099c178.96315,44.84075 196.55375,274.76824 73.8827,407.51866c-122.67104,132.75041 -54.38587,281.26288 -438.16544,221.26013c-383.77957,-60.00274 -565.40786,115.00527 -617.74144,-127.50584c-52.33358,-242.51111 157.00073,-272.51248 179.576,-326.26494c22.57527,-53.75246 -9.23534,-151.25693 13.33993,-270.01236z"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="group1_wrapper">
+                <div class="group1_menu">
+                    <div class="group1_menu_text">
+                        <p class="group1_menu_text_title">MENU</p>
+                        <p class="group1_menu_text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                    </div>
+                    <div class="menu_box">CEREALS & MILK</div>
+                    <div class="check_box">
+                        <div class="check_list_wrapper cereals">
+                            <p class="check_box_title">CEREALS</p>
+                            <ul class="check_list">
+                                <li>
+                                    <span class="food">Oatmeal cereal</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Oatmeal_cereal" class="checking">
+                                    <label for="Oatmeal_cereal"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Hazelnut cereal</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Hazelnut_cereal" class="checking" checked>
+                                    <label for="Hazelnut_cereal"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Rice Cereal</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Rice_Cereal" class="checking">
+                                    <label for="Rice_Cereal"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Integreal Cereal</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Integreal_Cereal" class="checking">
+                                    <label for="Integreal_Cereal"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Chocolate Cereal</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Chocolate_Cereal" class="checking">
+                                    <label for="Chocolate_Cereal"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Raspberry Cereal</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Raspberry_Cereal" class="checking">
+                                    <label for="Raspberry_Cereal"></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="check_list_wrapper milk">
+                            <p class="check_box_title">MILK</p>
+                            <ul class="check_list">
+                                <li>
+                                    <span class="food">Almond milk</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Almond_milk" class="checking" checked>
+                                    <label for="Almond_milk"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Hazelnut milk</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Hazelnut_milk" class="checking">
+                                    <label for="Hazelnut_milk"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Oat milk</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Oat_milk" class="checking">
+                                    <label for="Oat_milk"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Chocolate milk</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Chocolate_milk" class="checking">
+                                    <label for="Chocolate_milk"></label>
+                                </li>
+                                <li>
+                                    <span class="food">White milk</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="White_milk" class="checking">
+                                    <label for="White_milk"></label>
+                                </li>
+                                <li>
+                                    <span class="food">Cocoa milk</span>
+                                    <span class="price">$XX</span>
+                                    <input type="checkbox" id="Cocoa_milk" class="checking">
+                                    <label for="Cocoa_milk"></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="yoghourt">
+                            <p class="yoghourt_text">
+                                if you want, you can exchange milk for yoghourt
+                            </p>
+                            <div class="yoghourt_checkbox_wrapper">
+                                <p class="check_box_title">YOGHOURT</p>
+                                <ul class="yoghourt_checkbox">
+                                    <li>
+                                        <span class="food">Peach</span>
+                                        <span class="price">$XX</span>
+                                        <input type="checkbox" id="Peach" class="checking">
+                                        <label for="Peach"></label>
+                                    </li>
+                                    <li>
+                                        <span class="food">Vanilla</span>
+                                        <span class="price">$XX</span>
+                                        <input type="checkbox" id="Vanilla" class="checking">
+                                        <label for="Vanilla"></label>
+                                    </li>
+                                    <li>
+                                        <span class="food">Strawberry</span>
+                                        <span class="price">$XX</span>
+                                        <input type="checkbox" id="Strawberry" class="checking">
+                                        <label for="Strawberry"></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add_cart">ADD TO CART</button>
+                </div>
+                <div class="group1_btn">
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </section>
+        <section class="group2">
+            <h2 class="hidden">Select combo section</h2>
+            <div class="group2_wrapper swiper-container">
+                <div class="group2_text">
+                    <p class="group2_title">COMBOS</p>
+                    <p class="group2_description">We have the Funny Flakes perfect combos.<br/>Chose your best option</p>
+                </div>
+                <ul class="combo_wrapper swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="combo">
+                            <p class="combo_title">COMBO 1</p>
+                            <div class="combo_description_wrapper">
+                                <p class="combo_description">oatmeal with milk<br/>optional fruits</p>
+                                <p class="combo_description">optional exchange<br/>milk for yoghourt</p>
+                                <p class="combo_description">cheesecake</p>
+                            </div>
+                            <p class="combo_description combo_price">$XXX</p>
+                            <button class="combo_add_btn">ADD TO CART</button>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="combo">
+                            <p class="combo_title">COMBO 2</p>
+                            <div class="combo_description_wrapper">
+                                <p class="combo_description">chocolate cereal<br/>with cocoa milk</p>
+                                <p class="combo_description">optional raspberry<br>topping aggregate</p>
+                                <p class="combo_description">banana muffin</p>
+                            </div>
+                            <p class="combo_description combo_price">$XXX</p>
+                            <button class="combo_add_btn">ADD TO CART</button>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="combo">
+                            <p class="combo_title">COMBO 3</p>
+                            <div class="combo_description_wrapper">
+                                <p class="combo_description">almond cereal<br/>with oat milk</p>
+                                <p class="combo_description">optional fruit<br>or hazelnut cereals</p>
+                                <p class="combo_description">vegan chocolate cake</p>
+                            </div>
+                            <p class="combo_description combo_price">$XXX</p>
+                            <button class="combo_add_btn">ADD TO CART</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="combo_btn_wrapper">
+                <button></button>
+                <button></button>
+            </div>
+        </section>
+        <section class="group3">
+            <h2 class="hidden">About company section</h2>
+            <div class="group3_wrapper">
+                <div class="group3_box1"></div>
+                <div class="group3_box2">
+                    <div class="history_wrapper">
+                        <p class="group3_title">HISTORY</p>
+                        <ul class="history">
+                            <li class="group3_description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </li>
+                            <li class="group3_description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </li>
+                            <li class="group3_description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group3_box3">
+                    <div class="these_are">
+                        <p class="group3_title">THESE ARE</p>
+                        <div class="name_creator_wrapper">
+                            <div class="name_creator">
+                                <p class="name_creator_title">Name Creator</p>
+                                <p class="group3_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                        <div class="name_creator_wrapper">
+                            <div class="name_creator">
+                                <p class="name_creator_title">Name Creator</p>
+                                <p class="group3_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group3_box4"></div>
+            </div>
+        </section>
+        <div class="top_btn_wrapper">
+            <button></button>
+        </div>
     </div>
-    <!-- Header Close -->
-
-    <div class="menu" id="menu">
-      <h1>Hello World</h1>
-    </div>
-    <!-- Custom Javascript -->
-    <script src="assets/js/app.js"></script>
-  </body>
+    <footer>
+        <div class="footer_wrapper">
+            <ul class="contact">
+                <li>
+                    <p class="contact_title">HERE WE ARE</p>
+                    <p class="contact_description">358 West 58th.<br/>Street, 10019</p>
+                </li>
+                <li>
+                    <p class="contact_title">WE ARE OPEN</p>
+                    <p class="contact_description">every day from<br/>8 a.m. to 10 p.m.</p>
+                </li>
+                <li>
+                    <p class="contact_title">CALL US</p>
+                    <p class="contact_description">+910115039944448</p>
+                </li>
+                <li>
+                    <p class="contact_title">SAY HELLO</p>
+                    <p class="contact_description">hello@funnyflakes.com</p>
+                </li>
+            </ul>
+            <div class="social">
+                <div class="subscribe">
+                    <input type="text" class="email" placeholder="E-mail">
+                    <button>SUBSCRIBE</button>
+                </div>
+                <div class="follow">
+                    <p class="contact_title">FOLLOW US</p>
+                    <a href="#" class="instagram"></a>
+                    <a href="#" class="facebook"></a>
+                </div>
+            </div>
+            <p class="copyright">© 2019 Funny Flakes. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
